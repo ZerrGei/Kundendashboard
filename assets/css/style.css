@@ -28,19 +28,21 @@ body {
 
 /* Standard-Links weiß und ohne Unterstrich */
 .nav-links a {
-    color: white !important;
-    text-decoration: none !important;
-    font-size: 18px !important;
-    padding: 10px !important;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
 }
-
 
 /* Hover-Effekt: Rote Markierung */
 .nav-links a:hover {
     background-color: red;
+    color: white;
     padding: 10px;
     border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
+
 
 nav ul {
   list-style-type: none;
