@@ -15,11 +15,12 @@ body {
 
 /* Standard-Links weiß und ohne Unterstrich */
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    padding: 10px !important;
 }
+
 
 /* Hover-Effekt: Rote Markierung */
 .nav-links a:hover {
