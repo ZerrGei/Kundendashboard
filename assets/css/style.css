@@ -22,6 +22,14 @@ body {
   text-align: center;
 }
 
+.header h1 {
+    color: #ff0000; /* Knalliges Rot */
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
 /* Standard-Links weiß und ohne Unterstrich */
 .nav-links a {
     color: white !important;
