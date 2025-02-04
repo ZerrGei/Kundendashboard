@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Kundendashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Kundendashboard</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="admin.html">Admin Panel</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Sidebar mit Ansprechpartner-Info -->
+    <aside class="sidebar">
+      <h2>Ansprechpartner</h2>
+      <img src="assets/images/ansprechpartner.jpg" alt="Ansprechpartner" class="profile-pic">
+      <p><strong>Name:</strong> Max Mustermann</p>
+      <p><strong>Telefon:</strong> 01234 567890</p>
+      <p><strong>Email:</strong> max@example.com</p>
+    </aside>
+    <!-- Hauptinhalt -->
+    <main class="content">
+      <section class="overview">
+        <h2>Vertragsgeräte & Kosten</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Gerät</th>
+              <th>Kosten</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Smartphone</td>
+              <td>€299</td>
+            </tr>
+            <tr>
+              <td>Laptop</td>
+              <td>€799</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="shopping-cart">
+        <h2>Warenkorb</h2>
+        <div id="cartItems">
+          <!-- Hier werden per JavaScript Artikel hinzugefügt -->
+        </div>
+        <button id="addItemBtn">Gerät nachbestellen</button>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
 
