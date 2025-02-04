@@ -17,17 +17,13 @@ body {
 /* Header mit knalligem Rot */
 .header {
   background-color: white; /* Rot als Highlight */
-  color: #fff;
+  color: #ff0000;
   padding: 10px;
   text-align: center;
-}
-
-.header h1 {
-    color: #ff0000; /* Knalliges Rot */
-    font-size: 32px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
 }
 
 /* Standard-Links weiß und ohne Unterstrich */
