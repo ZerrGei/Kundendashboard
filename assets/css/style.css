@@ -26,6 +26,13 @@ body {
   margin-top: 10px;
 }
 
+.header h1 {
+    background-color: rgba(100, 100, 100, 0.2); /* Transparenter Grauton */
+    display: inline-block; /* Passt die Hintergrundbreite an den Text an */
+    padding: 10px 20px; /* Fügt etwas Abstand zum Text hinzu */
+    border-radius: 8px; /* Abgerundete Ecken für einen modernen Look */
+}
+
 /* Standard-Links weiß und ohne Unterstrich */
 .nav-links a {
     color: white;
