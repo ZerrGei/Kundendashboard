@@ -1,1 +1,144 @@
+/* Allgemeine Stile */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header mit knalligem Rot */
+.header {
+  background-color: #ff0000; /* Rot als Highlight */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* Sidebar-Stile */
+.sidebar {
+  width: 250px;
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Hauptinhalt */
+.content {
+  flex: 1;
+}
+
+/* Tabelle für Vertragsgeräte */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Warenkorb */
+.shopping-cart .cart-item {
+  background-color: #ffe6e6;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+/* Login-Formular */
+.login-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-container form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.login-container form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.login-container button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+/* Admin Panel Stile */
+.admin-section form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.admin-section form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.admin-section form button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.account-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.account-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
 
