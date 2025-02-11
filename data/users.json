@@ -5,7 +5,20 @@
     "ansprechpartner": {
       "name": "Max Mustermann",
       "telefon": "01234 567890",
-      "email": "max@example.com"
-    }
+      "email": "max@example.com",
+      "imageURL": "assets/images/ansprechpartner.jpg"
+    },
+    "devices": [
+      {
+        "deviceName": "Smartphone",
+        "quantity": 1,
+        "monthlyCost": 29.99
+      },
+      {
+        "deviceName": "Laptop",
+        "quantity": 1,
+        "monthlyCost": 59.99
+      }
+    ]
   }
 ]
