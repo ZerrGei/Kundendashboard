@@ -2,91 +2,92 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Admin Panel - Kundendashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Control Panel</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Admin-Login-Sektion -->
-  <div id="adminLoginSection">
-    <div class="login-container">
-      <h2>Admin Login</h2>
-      <form id="adminLoginForm">
-        <label for="adminUsername">Benutzername:</label>
-        <input type="text" id="adminUsername" name="adminUsername" required>
-        <label for="adminPassword">Passwort:</label>
-        <input type="password" id="adminPassword" name="adminPassword" required>
-        <button type="submit">Login</button>
+  <header class="header">
+    <h1 class="admin-header">Admin Control Panel</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="admin.html">Admin Panel</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Kundenkonto anlegen / bearbeiten -->
+    <section class="section">
+      <h2>Kundenkonto anlegen / bearbeiten</h2>
+      <form id="adminForm">
+        <label>Benutzername:</label>
+        <input type="text" id="custUsername" required>
+
+        <label>Passwort:</label>
+        <input type="password" id="custPassword" required>
+
+        <label>Name:</label>
+        <input type="text" id="custName" required>
+
+        <label>Telefon:</label>
+        <input type="text" id="custPhone" required>
+
+        <label>Email:</label>
+        <input type="email" id="custEmail" required>
+
+        <label>Ansprechpartner:</label>
+        <input type="text" id="custContact">
+
+        <label>Bild-URL:</label>
+        <input type="text" id="custImage">
+
+        <button type="submit">Konto anlegen</button>
       </form>
-      <div id="adminLoginError" class="error">Ungültige Admin-Daten!</div>
-    </div>
+    </section>
+
+    <!-- Vertragsgeräte bearbeiten -->
+    <section class="section">
+      <h2>Vertragsgeräte bearbeiten</h2>
+      <form id="deviceForm">
+        <label>Benutzername (zur Auswahl):</label>
+        <input type="text" id="deviceUsername" required>
+
+        <label>Gerät:</label>
+        <input type="text" id="deviceName" required>
+
+        <label>Anzahl:</label>
+        <input type="number" id="deviceCount" required>
+
+        <label>Monatliche Kosten:</label>
+        <input type="text" id="deviceCost" required>
+
+        <button type="submit">Gerät hinzufügen / bearbeiten</button>
+      </form>
+    </section>
+
+    <!-- Admin-Zugangsdaten ändern -->
+    <section class="section">
+      <h2>Admin-Zugangsdaten ändern</h2>
+      <form id="adminAccessForm">
+        <label>Neuer Admin-Benutzername:</label>
+        <input type="text" id="newAdminUsername" required>
+
+        <label>Neues Admin-Passwort:</label>
+        <input type="password" id="newAdminPassword" required>
+
+        <button type="submit">Admin-Daten hinzufügen</button>
+      </form>
+
+      <h3>Aktuelle Admin-Konten:</h3>
+      <div id="adminList">
+        <p><strong>Benutzername:</strong> MM</p>
+      </div>
+    </section>
   </div>
 
-  <!-- Admin Panel: Wird erst sichtbar, wenn Admin-Login erfolgreich -->
-  <div id="adminPanelSection" style="display:none;">
-    <header class="header">
-      <h1>Admin Control Panel</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="admin.html">Admin Panel</a></li>
-          <li><a href="index.html">Logout</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <!-- Sektion 1: Benutzerkonten anlegen und bearbeiten -->
-      <section class="admin-section">
-        <h2>Kundenkonto anlegen / bearbeiten</h2>
-        <form id="adminForm">
-          <label for="newUsername">Benutzername:</label>
-          <input type="text" id="newUsername" name="newUsername" required>
-          <label for="newPassword">Passwort:</label>
-          <input type="password" id="newPassword" name="newPassword" required>
-          <label for="custName">Ansprechpartner Name:</label>
-          <input type="text" id="custName" name="custName" required>
-          <label for="custPhone">Telefon:</label>
-          <input type="text" id="custPhone" name="custPhone" required>
-          <label for="custEmail">Email:</label>
-          <input type="email" id="custEmail" name="custEmail" required>
-          <label for="custImage">Bild-URL:</label>
-          <input type="text" id="custImage" name="custImage" required>
-          <button type="submit">Konto anlegen</button>
-        </form>
-        <div id="accountList">
-          <!-- Angelegte Benutzer werden hier angezeigt -->
-        </div>
-      </section>
-      <!-- Sektion 2: Vertragsgeräte bearbeiten -->
-      <section class="admin-section">
-        <h2>Vertragsgeräte bearbeiten</h2>
-        <form id="deviceForm">
-          <label for="targetUsername">Benutzername (zur Auswahl):</label>
-          <input type="text" id="targetUsername" name="targetUsername" required>
-          <label for="deviceName">Gerät:</label>
-          <input type="text" id="deviceName" name="deviceName" required>
-          <label for="deviceQuantity">Anzahl:</label>
-          <input type="number" id="deviceQuantity" name="deviceQuantity" required>
-          <label for="monthlyCost">Monatliche Kosten:</label>
-          <input type="number" step="0.01" id="monthlyCost" name="monthlyCost" required>
-          <button type="submit">Gerät hinzufügen / bearbeiten</button>
-        </form>
-      </section>
-      <!-- Sektion 3: Admin-Zugangsdaten ändern -->
-      <section class="admin-section">
-        <h2>Admin-Zugangsdaten ändern</h2>
-        <form id="changeAdminForm">
-          <label for="newAdminUsername">Neuer Admin-Benutzername:</label>
-          <input type="text" id="newAdminUsername" name="newAdminUsername" required>
-          <label for="newAdminPassword">Neues Admin-Passwort:</label>
-          <input type="password" id="newAdminPassword" name="newAdminPassword" required>
-          <button type="submit">Admin-Daten hinzufügen</button>
-        </form>
-        <div id="adminList">
-          <!-- Liste der Admin-Konten -->
-        </div>
-      </section>
-    </div>
-  </div>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
