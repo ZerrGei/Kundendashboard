@@ -1,0 +1,11 @@
+[
+  {
+    "username": "123",
+    "password": "123",
+    "ansprechpartner": {
+      "name": "Max Mustermann",
+      "telefon": "01234 567890",
+      "email": "max@example.com"
+    }
+  }
+]
